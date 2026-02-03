@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifex Art Paints Designer LTD - Professional Painting & Color Design</title>
+    <meta name="description" content="Professional painting services, color design, and decorative finishes. Interior and exterior painting with eco-friendly solutions. Fast quotes, professional teams.">
+    <meta name="keywords" content="painting, color design, decorative finishes, interior painting, exterior painting, eco-friendly paints, Rwanda, Kigali">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1a365d",
+                        secondary: "#2d3748",
+                        accent: "#e53e3e",
+                        "nifex-blue": "#1e40af",
+                        "nifex-green": "#10b981",
+                        "nifex-gold": "#d97706"
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+        }
+        .paint-swatch {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .paint-swatch:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .quote-form input:focus, .quote-form textarea:focus {
+            outline: none;
+            ring: 2px;
+            ring-color: #1e40af;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-nifex-blue rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">N</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">Nifex Art Paints</h1>
+                        <p class="text-xs text-gray-600">Designer LTD</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-nifex-blue font-medium transition-colors">Services</a>
+                    <a href="#colors" class="text-gray-700 hover:text-nifex-blue font-medium transition-colors">Color Gallery</a>
+                    <a href="#projects" class="text-gray-700 hover:text-nifex-blue font-medium transition-colors">Projects</a>
+                    <a href="#quote" class="text-gray-700 hover:text-nifex-blue font-medium transition-colors">Get Quote</a>
+                    <a href="#contact" class="text-gray-700 hover:text-nifex-blue font-medium transition-colors">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="tel:+250788563738" class="bg-nifex-blue text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition-colors hidden md:inline-flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        Call Now
+                    </a>
+                    <button class="md:hidden text-gray-700" id="mobileMenuBtn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden bg-white border-t" id="mobileMenu">
+                <div class="py-4 space-y-3">
+                    <a href="#services" class="block py-2 px-4 hover:bg-gray-100 rounded">Services</a>
+                    <a href="#colors" class="block py-2 px-4 hover:bg-gray-100 rounded">Color Gallery</a>
+                    <a href="#projects" class="block py-2 px-4 hover:bg-gray-100 rounded">Projects</a>
+                    <a href="#quote" class="block py-2 px-4 hover:bg-gray-100 rounded">Get Quote</a>
+                    <a href="#contact" class="block py-2 px-4 hover:bg-gray-100 rounded">Contact</a>
+                    <a href="tel:+250788563738" class="block bg-nifex-blue text-white py-2 px-4 rounded-lg font-medium text-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-6">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 font-display">Nifex Art Paints Designer LTD</h2>
+                    <p class="text-xl md:text-2xl text-blue-100 mb-6">Painting • Color Design • Decorative Finishes</p>
+                </div>
+                
+                <p class="text-2xl md:text-3xl font-bold mb-8">Beautiful paint. Brilliant service.</p>
+                
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-blue-100">
+                    We make spaces feel new — interior and exterior painting, color consultancy, and eco-friendly finishes. 
+                    Fast quotes, professional teams, tidy work.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6 mb-12">
+                    <div class="bg-white text-primary px-6 py-3 rounded-lg font-bold text-lg">
+                        <i class="fas fa-phone-alt mr-2 text-nifex-blue"></i>
+                        +(250) 788 563 738
+                    </div>
+                    <div class="bg-white text-primary px-6 py-3 rounded-lg font-bold text-lg">
+                        <i class="fas fa-envelope mr-2 text-nifex-blue"></i>
+                        contact@nifexartpaints.com
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <button onclick="scrollToQuote()" class="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors shadow-lg">
+                        Get a free quote
+                    </button>
+                    <a href="tel:+250788563738" class="bg-nifex-green text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-600 transition-colors shadow-lg text-center">
+                        Call Now
+                    </a>
+                </div>
+                
+                <!-- Limited Time Offer -->
+                <div class="mt-12 bg-yellow-500 text-primary p-6 rounded-xl max-w-2xl mx-auto shadow-lg">
+                    <div class="flex items-center justify-center mb-2">
+                        <i class="fas fa-tag text-2xl mr-3"></i>
+                        <h3 class="text-2xl font-bold">Limited Time Offer</h3>
+                    </div>
+                    <p class="text-xl font-semibold">Save up to 40% on exterior and interior painting</p>
+                    <p class="text-lg mt-2">Seasonal offer — call to book your project today!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Our Professional Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-nifex-blue rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Interior Painting</h3>
+                    <p class="text-gray-600 mb-6">Transform your living spaces with premium interior paints including:</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Eggshell & Matte Finishes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Satin & Semi-Gloss</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Low-VOC Eco Paints</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Textured Wall Finishes</li>
+                    </ul>
+                    <img src="https://picsum.photos/400/250?random=1" alt="Modern interior painting with light gray walls" class="w-full h-48 object-cover rounded-lg" loading="lazy">
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-nifex-green rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Exterior Painting</h3>
+                    <p class="text-gray-600 mb-6">Protect and beautify your property with durable exterior solutions:</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Weather-Resistant Coatings</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Anti-Mold & Mildew Paints</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Heat-Reflective Finishes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Long-Lasting Protection</li>
+                    </ul>
+                    <img src="https://picsum.photos/400/250?random=2" alt="House exterior painting with modern color scheme" class="w-full h-48 object-cover rounded-lg" loading="lazy">
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <div class="w-16 h-16 bg-nifex-gold rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Color Design & Consultation</h3>
+                    <p class="text-gray-600 mb-6">Professional color matching and design services:</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Color Psychology Analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Digital Color Visualization</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Material & Finish Selection</li>
+                        <li class="flex items-center"><i class="fas fa-check text-nifex-green mr-2"></i> Lighting Considerations</li>
+                    </ul>
+                    <img src="https://picsum.photos/400/250?random=3" alt="Color consultation with paint samples" class="w-full h-48 object-cover rounded-lg" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Gallery Section -->
+    <section id="colors" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Modern Color Collection</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">Explore our curated selection of trending interior and exterior paint colors for 2026</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-12">
+                <!-- Interior Colors -->
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #f5f5f4"></div>
+                    <h4 class="font-bold">Alabaster White</h4>
+                    <p class="text-sm text-gray-600">Interior • Matte</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #e7e5e4"></div>
+                    <h4 class="font-bold">Stone Gray</h4>
+                    <p class="text-sm text-gray-600">Interior • Eggshell</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #fef3c7"></div>
+                    <h4 class="font-bold">Warm Cream</h4>
+                    <p class="text-sm text-gray-600">Interior • Satin</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #dbeafe"></div>
+                    <h4 class="font-bold">Sky Blue</h4>
+                    <p class="text-sm text-gray-600">Interior • Semi-Gloss</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #f3f4f6"></div>
+                    <h4 class="font-bold">Cool Gray</h4>
+                    <p class="text-sm text-gray-600">Interior • Matte</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #fce7f3"></div>
+                    <h4 class="font-bold">Blush Pink</h4>
+                    <p class="text-sm text-gray-600">Interior • Eggshell</p>
+                </div>
+                
+                <!-- Exterior Colors -->
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #1e293b"></div>
+                    <h4 class="font-bold text-white">Midnight Blue</h4>
+                    <p class="text-sm text-gray-300">Exterior • Weatherproof</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #44403c"></div>
+                    <h4 class="font-bold">Charcoal Gray</h4>
+                    <p class="text-sm text-gray-600">Exterior • Heat-Resistant</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #854d0e"></div>
+                    <h4 class="font-bold">Terracotta</h4>
+                    <p class="text-sm text-gray-600">Exterior • UV Protected</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #365314"></div>
+                    <h4 class="font-bold text-white">Forest Green</h4>
+                    <p class="text-sm text-gray-300">Exterior • Anti-Mold</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #7c2d12"></div>
+                    <h4 class="font-bold text-white">Rust Red</h4>
+                    <p class="text-sm text-gray-300">Exterior • Durable</p>
+                </div>
+                <div class="paint-swatch bg-white p-4 rounded-xl shadow-sm">
+                    <div class="w-full h-32 rounded-lg mb-3" style="background-color: #fefce8"></div>
+                    <h4 class="font-bold">Cream White</h4>
+                    <p class="text-sm text-gray-600">Exterior • Reflective</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button onclick="scrollToQuote()" class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-900 transition-colors">
+                    <i class="fas fa-palette mr-2"></i>
+                    Request Color Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Our Recent Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Modern living room with gray accent wall" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Contemporary Living Room</h3>
+                        <p class="text-gray-600 mb-4">Feature wall with textured finish in Stone Gray</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Kigali Heights</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=5" alt="Modern office space with blue accent walls" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Corporate Office Space</h3>
+                        <p class="text-gray-600 mb-4">Complete interior painting with Sky Blue accents</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Kacyiru Business District</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=6" alt="House exterior with modern color scheme" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Residential Exterior</h3>
+                        <p class="text-gray-600 mb-4">Complete exterior repaint with heat-reflective coating</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Muhima Residence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary text-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-6">Get Your Free Quote</h2>
+                        <p class="text-blue-100 mb-6">Fastest way to start: call or email with photos of your project for an accurate quote.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Phone</h4>
+                                    <p class="text-blue-100">+(250) 788 563 738</p>
+                                    <p class="text-sm text-blue-200">Mon–Sat 08:00–18:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Email</h4>
+                                    <p class="text-blue-100">contact@nifexartpaints.com</p>
+                                    <p class="text-sm text-blue-200">Send photos/plans for a quicker quote</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-file-invoice text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">TIN</h4>
+                                    <p class="text-blue-100">123-456789</p>
+                                    <p class="text-sm text-blue-200">Company Tax Identification Number</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg">Location</h4>
+                                    <p class="text-blue-100">Muhima, Kigali</p>
+                                    <div class="flex space-x-3 mt-2">
+                                        <button onclick="openMap()" class="bg-white text-primary px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                                            Open Map
+                                        </button>
+                                        <button onclick="detectLocation()" class="bg-nifex-blue text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-800 transition-colors">
+                                            Detect my location
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Request Quote Form</h3>
+                        <form id="quoteForm" class="space-y-4 quote-form">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nifex-blue focus:ring-2 focus:ring-nifex-blue/20">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nifex-blue focus:ring-2 focus:ring-nifex-blue/20">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nifex-blue focus:ring-2 focus:ring-nifex-blue/20">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Project Type *</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nifex-blue focus:ring-2 focus:ring-nifex-blue/20">
+                                    <option value="">Select project type</option>
+                                    <option value="interior">Interior Painting</option>
+                                    <option value="exterior">Exterior Painting</option>
+                                    <option value="both">Both Interior & Exterior</option>
+                                    <option value="consultation">Color Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Project Description *</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-nifex-blue focus:ring-2 focus:ring-nifex-blue/20" placeholder="Describe your project, rooms to paint, special requirements..."></textarea>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Upload Photos (Optional)</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                                    <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                                    <p class="text-gray-600">Drag & drop photos or <span class="text-nifex-blue cursor-pointer">browse</span></p>
+                                    <p class="text-sm text-gray-500 mt-1">Upload project photos for accurate quote</p>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-accent text-white py-3 rounded-lg font-bold text-lg hover:bg-red-700 transition-colors">
+                                Submit Quote Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-secondary text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-nifex-blue rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-2xl">N</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Nifex Art Paints</h3>
+                            <p class="text-sm text-gray-300">Designer LTD</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">Professional painting services with eco-friendly solutions and brilliant service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-nifex-blue transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-nifex-blue transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-nifex-blue transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Our Services</a></li>
+                        <li><a href="#colors" class="text-gray-300 hover:text-white transition-colors">Color Gallery</a></li>
+                        <li><a href="#projects" class="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#quote" class="text-gray-300 hover:text-white transition-colors">Get Quote</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li class="text-gray-300">Interior Painting</li>
+                        <li class="text-gray-300">Exterior Painting</li>
+                        <li class="text-gray-300">Color Design</li>
+                        <li class="text-gray-300">Decorative Finishes</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mr-3 mt-1 text-gray-400"></i>
+                            <span>+(250) 788 563 738</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mr-3 mt-1 text-gray-400"></i>
+                            <span>contact@nifexartpaints.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1 text-gray-400"></i>
+                            <span>Muhima, Kigali, Rwanda</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mr-3 mt-1 text-gray-400"></i>
+                            <span>Mon–Sat: 08:00–18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2026 Nifex Art Paints Designer LTD — Licensed • Insured • Satisfaction guaranteed</p>
+                    <div class="flex space-x-6">
+                        <span class="text-gray-400">TIN: 123-456789</span>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="tel:+250788563738" class="bg-nifex-green text-white p-4 rounded-full shadow-lg hover:bg-emerald-600 transition-colors flex items-center justify-center">
+            <i class="fas fa-phone-alt text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Define data at the beginning
+        const services = [
+            { "id": 1, "title": "Interior Painting", "icon": "fa-home", "color": "blue" },
+            { "id": 2, "title": "Exterior Painting", "icon": "fa-building", "color": "green" },
+            { "id": 3, "title": "Color Design", "icon": "fa-palette", "color": "gold" }
+        ];
+        
+        const interiorColors = [
+            { "name": "Alabaster White", "hex": "#f5f5f4", "type": "Matte" },
+            { "name": "Stone Gray", "hex": "#e7e5e4", "type": "Eggshell" },
+            { "name": "Warm Cream", "hex": "#fef3c7", "type": "Satin" },
+            { "name": "Sky Blue", "hex": "#dbeafe", "type": "Semi-Gloss" },
+            { "name": "Cool Gray", "hex": "#f3f4f6", "type": "Matte" },
+            { "name": "Blush Pink", "hex": "#fce7f3", "type": "Eggshell" }
+        ];
+        
+        const exteriorColors = [
+            { "name": "Midnight Blue", "hex": "#1e293b", "type": "Weatherproof" },
+            { "name": "Charcoal Gray", "hex": "#44403c", "type": "Heat-Resistant" },
+            { "name": "Terracotta", "hex": "#854d0e", "type": "UV Protected" },
+            { "name": "Forest Green", "hex": "#365314", "type": "Anti-Mold" },
+            { "name": "Rust Red", "hex": "#7c2d12", "type": "Durable" },
+            { "name": "Cream White", "hex": "#fefce8", "type": "Reflective" }
+        ];
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobileMenu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Thank you for your quote request! We'll contact you within 24 hours.");
+            this.reset();
+        });
+
+        // Helper functions
+        function scrollToQuote() {
+            document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openMap() {
+            window.open('https://maps.google.com/?q=Muhima,Kigali,Rwanda', '_blank');
+        }
+
+        function detectLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    window.open(`https://maps.google.com/?q=${lat},${lng}&daddr=Muhima,Kigali,Rwanda`, '_blank');
+                }, function() {
+                    alert("Unable to detect your location. Please enable location services.");
+                });
+            } else {
+                alert("Geolocation is not supported by your browser.");
+            }
+        }
+
+        // Add active class to navigation on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-nifex-blue');
+                link.classList.add('text-gray-700');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.remove('text-gray-700');
+                    link.classList.add('text-nifex-blue');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
